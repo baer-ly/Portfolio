@@ -21,6 +21,10 @@ profile.cov
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
+# Air build artifacts
+tmp/
+build-errors.log
+
 # Go workspace file
 go.work
 go.work.sum
@@ -28,11 +32,12 @@ go.work.sum
 # env file
 .env
 config.local.yaml
+.air.toml
 # Editor/IDE
- .idea/
- .vscode/
+.idea/
+.vscode/
 
- # build output
- bin/
- build/
- dist/
+# build output
+bin/
+build/
+dist/

@@ -1,0 +1,19 @@
+root = "."
+tmp_dir = "tmp"
+
+[build]
+cmd = "go build -o ./tmp/main"
+delay = 1000
+exlude_dir = ["assets", "tmp", "vendor"]
+full_binary = "tmp/main"
+include_ext = ["go", "html", "css", "js"]
+log = "build-error.log"
+
+[color]
+build = "yellow"
+main = "magenta"
+runner = "green"
+watcher = "cyan"
+
+clean_on_exit = true
+
